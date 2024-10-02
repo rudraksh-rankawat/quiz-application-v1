@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to the Show</title>
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
-    <h1>Let the Game Begin</h1>
-    <p>Welcome to the interactive quiz game</p>
+    
+
+    <div class="start-cont">
+
+        <!-- Easter Egg starts -->
+        <div id="easter-egg">
+            <h1 style="margin-bottom: 0%;">🥚 YOU FOUND AN EASTER EGG 🥚</h1>
+            <p style="margin-top: 0%;">Bypass without entering your name...</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Let's Go</a>
+        </div>
+        <!-- Easter Egg ends-->
+
+
+        <div class="name-submission" id="input-view">
+            <h1 id="easter">Please enter your good name!</h1>
+            <input id="input-name" type="text" required placeholder="Don't click above!"><br><br>
+            <button id="name-button">Start</button>
+        </div>
+
+        <section id="result-view">
+            <h1 id="welcome-heading">Welcome</h1>
+            <progress></progress><br>
+            <p>Test your GK by giving random quiz and practice KBC.</p>
+            
+            <a href="./quiz.html">Let's Go</a><br>
+        </section>
+        
+
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
